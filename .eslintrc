@@ -1,0 +1,24 @@
+{ 
+	"extends": "react-native-wcandillon",
+	"plugins": ["unused-imports"],
+	"rules": {
+		"unused-imports/no-unused-imports": "error",
+		"import/no-default-export": "off",
+    "unused-imports/no-unused-vars" : [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+		"prettier/prettier": [
+			"error",
+			{
+			  "endOfLine": "auto",
+			  "trailingComma": "none"
+			}
+		  ]
+	}
+} 
