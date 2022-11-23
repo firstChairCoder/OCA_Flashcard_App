@@ -3,7 +3,6 @@
 	"plugins": ["unused-imports"],
 	"rules": {
 		"unused-imports/no-unused-imports": "error",
-		"import/no-default-export": "off",
     "unused-imports/no-unused-vars" : [
       "warn",
       {
@@ -13,6 +12,22 @@
         "argsIgnorePattern": "^_"
       }
     ],
+	"sort-imports": 
+            ["error", {
+              "ignoreCase": true,
+              "ignoreDeclarationSort": true
+            }],
+            "import/no-default-export": "off",
+            "import/order": [
+              1,
+              {
+                "groups": [
+                  "builtin", "external", "internal",
+                  ["parent", "sibling", "index"]
+                ],
+                "newlines-between": "always"
+              }
+            ],
 		"prettier/prettier": [
 			"error",
 			{
