@@ -1,0 +1,39 @@
+{ 
+	"extends": "react-native-wcandillon",
+	"plugins": ["unused-imports"],
+	"rules": {
+		"unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars" : [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+	"sort-imports": 
+            ["error", {
+              "ignoreCase": true,
+              "ignoreDeclarationSort": true
+            }],
+            "import/no-default-export": "off",
+            "import/order": [
+              1,
+              {
+                "groups": [
+                  "builtin", "external", "internal",
+                  ["parent", "sibling", "index"]
+                ],
+                "newlines-between": "always"
+              }
+            ],
+		"prettier/prettier": [
+			"error",
+			{
+			  "endOfLine": "auto",
+			  "trailingComma": "none"
+			}
+		  ]
+	}
+} 
