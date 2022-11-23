@@ -2769,6 +2769,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@shopify/restyle@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@shopify/restyle@npm:2.1.0"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-native: ">=0.59.0"
+  checksum: 338e3048ee626105b530c77f7a51f3614789dbe8c0840c9ee06e254b15bba6bdbbf35fd70d161086b9b9bbfd2530727434ebd102ca82b4cac88b2d2abcca4746
+  languageName: node
+  linkType: hard
+
 "@sideway/address@npm:^4.1.3":
   version: 4.1.4
   resolution: "@sideway/address@npm:4.1.4"
@@ -9682,6 +9692,7 @@ __metadata:
     "@react-navigation/bottom-tabs": ^6.0.5
     "@react-navigation/native": ^6.0.2
     "@react-navigation/native-stack": ^6.1.0
+    "@shopify/restyle": 2.1.0
     "@types/react": ~18.0.24
     "@types/react-native": ~0.70.6
     eslint: 8.28.0
